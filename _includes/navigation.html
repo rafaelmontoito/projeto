@@ -1,6 +1,11 @@
 
-{% for page in site.pages %}
-    <li>
-        <a href="{{ page.url }}">{{page.title}}</a>
-    </li>
-{% endfor %}
+<nav>
+    <h2><a href="{{ site.baseurl }}/"> Rafael Montoito </a></h2>
+    <ul>
+        {% for page in site.data.navigation.docs %}
+            <li>
+                <a href="{{ site.baseurl }}/{{ page.url }}"> {{page.title}} </a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

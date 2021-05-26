@@ -1,0 +1,18 @@
+<section>
+    <ul>
+        {% for project in site.projects %}
+            <li>
+                <a href="{{ site.baseurl }}{{ project.url }}">
+                    <h2>{{project.title}}</h2>
+                    <figure>
+                        <figcaption>
+                            <p>{{project.category}}</p>
+                            <p>{{project.description}}</p>
+                        </figcaption>
+                        <img src="{{ site.baseurl }}{{ project.thumbnail }}" alt="{{ project.thumbnail_alt }}">
+                    </figure>
+                </a>  
+            </li>
+        {% endfor %}
+    </ul>
+</section>
