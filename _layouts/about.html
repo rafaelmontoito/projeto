@@ -3,11 +3,9 @@ layout: default
 ---
 <main>
     <h2>{{page.title}}</h2>
-
+    <section>
         {{content}}
-
+    </section>
+    {% include skills.html %}
+    {% include education.html %}
 </main>
-
-{% include skills.html %}
-
-{% include education.html %}
