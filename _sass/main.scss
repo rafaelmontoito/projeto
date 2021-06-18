@@ -1,6 +1,10 @@
 
 $font: Syne, sans-serif;
 
+$screensize-medium: 560px;
+$screensize-large: 700px;
+$screensize-big: 992px;
+
 $background-color: white;
 $text-color: black;
 $accent-color: blue;
@@ -30,4 +34,6 @@ $accent-color: blue;
 
 @import 
 "base",
-"about";
+"about",
+"projects",
+"mediaqueries";

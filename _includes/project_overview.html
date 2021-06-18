@@ -1,18 +1,18 @@
-<nav>
+<div class="projectdisplay">
     <ul>
         {% for project in site.projects %}
-            <li>
+            <li class="project">
                 <a href="{{ site.baseurl }}{{ project.url }}">
                     <h2>{{project.title}}</h2>
                     <figure>
+                        <img src="{{ site.baseurl }}{{ project.thumbnail }}" alt="{{ project.thumbnail_alt }}">
                         <figcaption>
-                            <p>{{project.category}}</p>
+                            <p class="category">{{project.category}}</p>
                             <p>{{project.description}}</p>
                         </figcaption>
-                        <img src="{{ site.baseurl }}{{ project.thumbnail }}" alt="{{ project.thumbnail_alt }}">
                     </figure>
                 </a>  
             </li>
         {% endfor %}
     </ul>
-</nav>
+</div>

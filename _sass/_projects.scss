@@ -1,0 +1,55 @@
+.projects {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+    h1 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+.projectdisplay {
+    margin-top: 20px;
+
+    ul {
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+
+    li {
+        padding: 0;
+        margin-bottom: 40px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    h2 {
+        margin-left: 4%;
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    h2:hover {
+        color: $accent-color;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .category {
+        font-size: 13px;
+    }
+}

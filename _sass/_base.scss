@@ -6,6 +6,34 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    width: 100vw;
+    // height: 99vh;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 5% 35% 25% 25% 10%;
+    height: 100%;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    img {
+        width: 300px;
+    }
+}
+
+.description {
+    padding-top: 10%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
 main {
     width: 100vw;
 }
@@ -67,7 +95,7 @@ h3 {
 }
 
 .name {
-    margin-top: 20px;;
+    margin-top: 20px;
 }
 
 figure {
@@ -81,19 +109,47 @@ ul {
     display: flex;
     width: 100vw;
     margin: auto;
-    justify-content: space-around;
+    justify-content: flex-end;
     padding-left: 5%;
     padding-right: 5%;
 }
 
 li {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 nav {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    height: 40px;
+    position: sticky;
+    top: -1px;
+    background-color: $background-color;
+
     ul {
         list-style-type: none;
+        align-self: flex-end;
+    }
+
+    .home {
+        padding-top: 3px;
+        padding-left: 4%;
+
+        a {
+            text-decoration: none;
+            font-size: 28px;
+            color: $accent-color;
+        }
+    }
+
+    .top-navigation {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
 }
 
@@ -103,4 +159,57 @@ img {
     display: flex;
     align-content: center;
     width: 100vw;
+}
+
+footer {
+    align-self: flex-end;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    margin-top: 40px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+
+    .copyright {
+        p, a {
+            font-size: 13px;
+        }
+    }
+}
+
+.contacts {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    text-align: center;
+    align-self: center;
+    height: 22vh;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+
+    p, a {
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+
+.back {
+    padding-top: 5%;
+}
+
+.project-title {
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 34px;
+}
+
+.link-more {
+    padding-left: 4%;
+    padding-right: 4%;
 }

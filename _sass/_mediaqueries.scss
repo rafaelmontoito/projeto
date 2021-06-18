@@ -1,0 +1,231 @@
+header {
+    h1, h2 {
+        @media (min-width: $screensize-medium) {
+            font-size: 40px;
+        }
+
+        @media (min-width: $screensize-large) {
+            font-size: 45px;
+        }
+
+        @media (min-width: $screensize-big) {
+            font-size: 52px;
+        }
+    }
+}
+
+.description {
+
+    @media (min-width: $screensize-medium) {
+        padding-top: 10%;
+    }
+
+    @media (min-width: $screensize-large) {
+        padding-top: 7%;
+    }
+
+    @media (min-width: $screensize-big) {
+        padding-top: 5%;
+    }
+
+    h3, a {
+        @media (min-width: $screensize-medium) {
+            font-size: 24px;
+        }
+
+        @media (min-width: $screensize-large) {
+            font-size: 28px;
+        }
+
+        @media (min-width: $screensize-big) {
+            font-size: 32px;
+        }
+    }
+}
+
+.name {
+
+    @media (min-width: $screensize-medium) {
+        margin-top: 60px;
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: $screensize-big) {
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+}
+
+h3, p {
+    @media (min-width: $screensize-medium) {
+        padding-left: 15%;
+    }
+}
+
+p {
+    @media (min-width: $screensize-medium) {
+        padding-right: 15%;
+    }
+}
+
+header {
+    img {
+        @media (min-width: $screensize-medium) {
+            width: 400px;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+h2.designer {
+     @media (min-width: $screensize-medium) {
+         margin: 0;
+         display: inline;
+         padding-right: 10%;
+         position: absolute;
+         right: 0;
+     }
+
+     @media (min-width: $screensize-big) {
+        padding-right: 16%;
+    }
+ }
+
+ h2.product {
+     @media (min-width: $screensize-medium) {
+        display: inline;
+        padding-left: 10%;
+        margin: 0;
+     }
+
+     @media (min-width: $screensize-big) {
+        padding-left: 16%;
+    }
+ }
+
+img {
+    @media (min-width: $screensize-medium) {
+        width: 70vw;
+    }
+}
+
+ul {
+    @media (min-width: $screensize-medium) {
+        padding-right: 10%;
+    }
+}
+
+nav {
+    @media (min-width: $screensize-medium) {
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 50px;
+    }
+}
+
+.line {
+    @media (min-width: $screensize-medium) {
+        width: 70vw;
+    }
+}
+
+.skills {
+    li {
+        @media (min-width: $screensize-medium) {
+            list-style-type: none;
+        }
+    }
+
+    h3 {
+        @media (min-width: $screensize-medium) {
+            padding-left: 5%;
+        }
+    }
+
+    ul {
+        @media (min-width: $screensize-medium) {
+            display: inline;
+        }
+    }
+}
+
+.skills-content {
+    @media (min-width: $screensize-medium) {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+}
+
+.soft-skills {
+    @media (min-width: $screensize-medium) {
+        padding-top: 0;
+        width: 48vw;
+    }
+}
+
+h2.home {
+    @media (min-width: $screensize-medium) {
+        padding-left: 10%;
+     }
+
+    @media (min-width: $screensize-big) {
+        padding-left: 11%;
+    }
+}
+
+.school {
+    @media (min-width: $screensize-big) {
+        display: inline;
+    }
+}
+
+.date {
+    @media (min-width: $screensize-big) {
+        padding-right: 15%;
+        display: inline;
+        position: absolute;
+        right: 0;
+    }
+}
+
+.project {
+    img {
+        @media (min-width: $screensize-medium) {
+            margin: auto;
+            padding-bottom: 2%;
+            padding-top: 2%;
+        }
+
+        @media (min-width: $screensize-big) {
+            width: 60vw;
+        }
+    }
+
+    figcaption {
+        @media (min-width: $screensize-big) {
+            padding-left: 6%;
+        }
+    }
+}
+
+.link-more {
+    @media (min-width: $screensize-medium) {
+        padding-left: 15%;
+    }
+}
+
+.contacts {
+    @media (min-width: $screensize-medium) {
+        height: 20vh;
+    }
+
+    @media (min-width: $screensize-large) {
+        height: 18vh;
+    }
+
+    @media (min-width: $screensize-big) {
+        height: 17vh;
+    }
+}
